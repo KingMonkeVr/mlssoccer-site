@@ -2,41 +2,51 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MLS Community Bot</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>MLS Community Bot</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="commands.html">Commands</a>
-      <a href="terms.html">Terms of Service</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="https://discord.gg/mlssoccer" target="_blank">Join Discord</a>
+    <nav class="navbar">
+      <h1 class="logo">MLS Community Bot</h1>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="commands.html">Commands</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a class="btn" href="https://discord.gg/mlssoccer" target="_blank">Join Discord</a></li>
+      </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Welcome to the Official MLS Community Bot</h2>
-      <p>The all-in-one bot for fans, reps, and players in the MLS Discord ecosystem. Manage career mode, predict match results, and stay updated with live standings and news.</p>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Next-Gen Discord Experience for MLS Fans</h2>
+      <p>Level up your server with stats, leaderboards, prediction leagues, and Career Mode all in one place.</p>
+      <a class="btn-outline" href="commands.html">Explore Commands</a>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="card">
+      <h3>Career Mode</h3>
+      <p>Train your skills, sign with academies, climb to the top of the league, and become a Hall of Famer.</p>
     </section>
 
-    <section>
-      <h3>Key Features</h3>
-      <ul>
-        <li>Career Mode: Train, sign contracts, play matches, and build your legacy.</li>
-        <li>Prediction League: Compete with others and climb the leaderboards.</li>
-        <li>Live MLS News & Standings.</li>
-        <li>Community suggestions and bug reporting system.</li>
-      </ul>
+    <section class="card">
+      <h3>Prediction League</h3>
+      <p>Submit matchday predictions and compete against others in your community with live leaderboards.</p>
+    </section>
+
+    <section class="card">
+      <h3>Live MLS News</h3>
+      <p>Stay informed with automated news pulls and updates directly from MLS and club sources.</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 MLS Community Bot. All rights reserved.</p>
+    <p>&copy; 2025 MLS Community Bot. Built by calebrlycan.</p>
   </footer>
 </body>
 </html>
