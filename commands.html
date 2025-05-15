@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bot Commands - MLS Community Bot</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #444;
+      background: #000;
+    }
+    header img {
+      height: 50px;
+      border-radius: 10px;
+    }
+    nav {
+      margin-left: auto;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ccc;
+      text-decoration: underline;
+    }
+    .commands-section {
+      padding: 80px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .commands-section h1 {
+      font-size: 2.8rem;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .category {
+      margin-bottom: 50px;
+    }
+    .category h2 {
+      font-size: 2rem;
+      margin-bottom: 15px;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 5px;
+    }
+    .command {
+      margin-bottom: 12px;
+    }
+    .command strong {
+      color: #00ffcc;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://cdn.discordapp.com/attachments/1327503889829859434/1372611853167104050/IMG_2008.png?ex=682767e7&is=68261667&hm=c3ba4ee62394ca781463aea40cb99a349c7614250806c640643e9d6304ca39f7&" alt="MLS Bot Logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="team.html">Team</a>
+      <a href="commands.html">Commands</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="tos.html">Terms of Service</a>
+      <a href="https://discord.gg/mlssoccer" target="_blank">Support Server</a>
+    </nav>
+  </header>
 
+  <section class="commands-section">
+    <h1>Bot Command Guide</h1>
+
+    <div class="category">
+      <h2>Public Commands</h2>
+      <div class="command"><strong>/trivia</strong> – Test your MLS knowledge!</div>
+      <div class="command"><strong>/check_leaderboards</strong> – See top predictors for current matchday.</div>
+      <div class="command"><strong>/total_leaderboards</strong> – View the full-season standings for all matchdays together.</div>
+      <div class="command"><strong>/standings</strong> – Display official MLS 2025 standings.</div>
+      <div class="command"><strong>/news</strong> – Display news from the MLS or MLS Bot updates.</div>
+      <div class="command"><strong>/suggestion</strong> – Send a bug report or suggestion to the creator.</div>
+    </div>
+
+    <div class="category">
+      <h2>Career Mode Commands (Public)</h2>
+      <div class="command"><strong>/career_start</strong> – Begin your soccer journey as a Free Agent!</div>
+      <div class="command"><strong>/sign_contract</strong> – Sign with a MLS academy!</div>
+      <div class="command"><strong>/train [skill]</strong> – Train pace, passing, shooting, or defense and earn XP.</div>
+      <div class="command"><strong>/my_stats</strong> – View your career mode stats.</div>
+      <div class="command"><strong>/heal</strong> – Recover from an injury.</div>
+      <div class="command"><strong>/simulate_match</strong> – Play a simulated match and earn XP!</div>
+      <div class="command"><strong>/offers</strong> – Get team offers based on your stats!</div>
+      <div class="command"><strong>/retire</strong> – End your career with a Hall of Fame message.</div>
+      <div class="command"><strong>/hall_of_fame</strong> – See the top 10 legendary players on the server.</div>
+    </div>
+
+    <div class="category">
+      <h2>KickGo Commands</h2>
+      <div class="command"><strong>/start</strong> – Start KickGo and get your starter + KickCoins.</div>
+      <div class="command"><strong>/catch</strong> – Try to catch new players for your collection.</div>
+      <div class="command"><strong>/profile</strong> – View your KickGo stats, wins/losses, and currency.</div>
+      <div class="command"><strong>/battle</strong> – Challenge others in penalty shootouts for KickCoins.</div>
+      <div class="command"><strong>/dex</strong> – Browse the full index of KickGo players.</div>
+      <div class="command"><strong>/buy</strong> – Purchase shop items for gameplay boosts.</div>
+      <div class="command"><strong>/inventory</strong> – View your owned items.</div>
+      <div class="command"><strong>/use</strong> – Activate or apply an item (e.g. catch boosts).</div>
+      <div class="command"><strong>/leaderboards</strong> – View top KickGo players by wins, coins, or catches.</div>
+    </div>
+
+    <div class="category">
+      <h2>Prediction League Reps Only</h2>
+      <div class="command"><strong>/predict</strong> – Submit your matchday predictions.</div>
+      <div class="command"><strong>/check_predictions</strong> – Review your submitted picks.</div>
+    </div>
+
+    <div class="category">
+      <h2>MLS Community Staff Only</h2>
+      <div class="command"><strong>/add_results</strong> – Add final match results to the system.</div>
+      <div class="command"><strong>/inactivity_report</strong> – Report or review inactive reps.</div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 MLS Community Bot. All rights reserved.
+  </footer>
+</body>
+</html>
