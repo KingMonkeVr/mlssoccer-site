@@ -2,53 +2,114 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>MLS Community Bot</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0; padding: 0;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Roboto', sans-serif;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      border-bottom: 1px solid #444;
+      position: sticky;
+      top: 0;
+      background: #000;
+      z-index: 1000;
+    }
+    header img {
+      height: 50px;
+      border-radius: 10px;
+    }
+    nav {
+      margin-left: auto;
+    }
+    nav a {
+      color: #fff;
+      margin-left: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ccc;
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px 150px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .hero img {
+      height: 150px;
+      border-radius: 20px;
+      margin-bottom: 40px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+      line-height: 1.5;
+    }
+    .btn {
+      background: #fff;
+      color: #000;
+      border: none;
+      padding: 15px 30px;
+      font-weight: 700;
+      cursor: pointer;
+      margin: 10px 15px 0;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background: #ddd;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #444;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <div class="container nav">
-      <h1>MLS Community Bot</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Commands</a></li>
-          <li><a href="#">Terms</a></li>
-          <li><a href="#">Privacy</a></li>
-          <li><a class="btn" href="https://discord.gg/mlssoccer" target="_blank">Join Discord</a></li>
-        </ul>
-      </nav>
-    </div>
+    <img src="https://cdn.discordapp.com/attachments/1327503889829859434/1372611853167104050/IMG_2008.png?ex=682767e7&is=68261667&hm=c3ba4ee62394ca781463aea40cb99a349c7614250806c640643e9d6304ca39f7&" alt="MLS Community Bot Logo" />
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#team">Team</a>
+      <a href="#commands">Commands</a>
+      <a href="#privacy">Privacy Policy</a>
+      <a href="#tos">Terms of Service</a>
+      <a href="https://discord.gg/mlssoccer" target="_blank" rel="noopener noreferrer">Support Server</a>
+    </nav>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Elevating MLS Fan Experience on Discord</h2>
-      <p>The ultimate Discord bot for Major League Soccer fans featuring live standings, prediction leagues, and career progression.</p>
-      <a href="#" class="btn-outline">View Commands</a>
-    </div>
-  </section>
-
-  <section class="features container">
-    <div class="card">
-      <h3>Career Mode</h3>
-      <p>Start your journey, train, sign with academies, and chase the Hall of Fame.</p>
-    </div>
-    <div class="card">
-      <h3>Prediction League</h3>
-      <p>Compete with friends by predicting real MLS matches — stay top of the leaderboard.</p>
-    </div>
-    <div class="card">
-      <h3>Live MLS News</h3>
-      <p>Stay updated with live MLS updates, club news, and transfer alerts.</p>
-    </div>
+  <section class="hero" id="home">
+    <img src="https://cdn.discordapp.com/attachments/1327503889829859434/1372611853167104050/IMG_2008.png?ex=682767e7&is=68261667&hm=c3ba4ee62394ca781463aea40cb99a349c7614250806c640643e9d6304ca39f7&" alt="MLS Community Bot Logo" />
+    <h1>Welcome to MLS Community Bot</h1>
+    <p><strong>MLS Community Bot</strong> is a Discord bot designed for MLS fans that provides live scores, news, stats, and fun commands tailored to Major League Soccer enthusiasts.</p>
+    <p>Launched in 2025, it’s been continuously updated by dedicated developers and MLS fans like you.</p>
+    <p>Perfect for MLS communities, fan servers, and anyone wanting real-time MLS updates right inside Discord.</p>
+    <button class="btn" onclick="window.open('https://discord.com/oauth2/authorize?client_id=1355945888085971167&permissions=8&integration_type=0&scope=bot+applications.commands', '_blank')">Invite the Bot</button>
+    <button class="btn" onclick="window.location.href='#commands'">View Commands</button>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 MLS Community Bot — Built by calebrlycan.</p>
-    </div>
+    &copy; 2025 MLS Community Bot. All rights reserved.
   </footer>
 </body>
 </html>
